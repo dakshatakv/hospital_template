@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+
+      <!-- font awesome -->    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+      <!-- google fonts -->    
+      <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+      <title>Book Appointment</title>
+    </head>
+    <body> 
+
+     	<!-- navbar -->       
+        <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">HOSPITAL</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:black;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link parent-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link parent-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Patients</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item child-link" href="patients.html">Login/Signup</a>
+                        </li>  
+                        <li class="nav-item dropdown">
+                                <a class="nav-link parent-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Doctors</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item child-link" href="doctors.html">Our Doctors</a>
+                                <a class="dropdown-item child-link" href="#">Login/Signup</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link parent-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item child-link" href="departments.html">Departments</a>
+                                <a class="dropdown-item child-link" href="testimonials.html">Testimonials</a>
+                                <a class="dropdown-item child-link" href="contact.html">Contact us</a>
+                        </li>                       
+                    </ul>                       
+                    <a href="appointment.html" class="btn btn-lg btn-info">Book an Appointment</a>                   
+          </div>
+        </nav>
+
+      <section id="appointment">
+        <div class="container my-5">
+        	<!-- heading -->    
+          <h2 align="center">Make an Appointment</h2>
+          <form id="appointment-form">
+          	<!-- appointment form -->    
+              <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                        <div class="form-group">
+                          <label class="label-appointment" for="pickDate">Select Date</label>
+                          <input type="date" class="form-control" id="pickDate" required>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                        <div class="form-group">
+                          <label class="label-appointment" for="appointmenttime">Specify suitable time</label>
+                          <input type="text" class="form-control" id="appointmenttime" required>
+                        </div>
+                    </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                          <div class="form-group">
+                            <label class="label-appointment" for="department">Select Department</label>
+                            <select class="form-control" id="department" onchange="onDepartmentSelect();" required>
+                              <option value="" disabled selected>Department</option>
+                              <option>Dental care</option>
+                              <option>Pediatrics</option>
+                              <option>Test diagnostic</option>
+                              <option>Physiotherapy</option>
+                              <option>Orthopedics</option>
+                              <option>Cardiology</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                          <div class="form-group">
+                            <label class="label-appointment" for="doctor">Select Doctor</label>
+                            <select class="form-control" id="doctor" required>
+                              <option value="" disabled selected>Doctor</option>
+                              <option value = "Dr. Jocelyn Wren">Dr. Jocelyn Wren</option> 
+                              <option value = "Dr. Mark Wilson">Dr. Mark Wilson</option>                                                         
+                            </select>
+                          </div>
+                      </div>
+                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                          <div class="form-group">
+                            <label class="label-appointment" for="pname">Enter Name</label>
+                            <input type="text" class="form-control" id="pname" required>
+                          </div>  
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 form-div">
+                          <div class="form-group">
+                            <label class="label-appointment" for="pphone">Enter Phone Number</label>
+                            <input type="tel" class="form-control" id="pphone" required>
+                          </div>  
+                      </div>
+                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-div">
+                          <div class="form-group">
+                            <label class="label-appointment" for="pphone">Enter Email</label>
+                            <input type="email" class="form-control" id="pemail" required>
+                          </div> 
+                        </div>
+                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-div"> 
+                        <a href="#" id="book-appointment" class="btn btn-info btn-block">Book Now</a>
+                      </div>
+              </div>
+          </form>
+        </div>
+      </section>
+            <!-- Partners -->
+            <section id="partners">
+                <h2 align="center">Our Partners</h2>
+                <div class="container"> 
+                    <div class="row">         
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/1.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/2.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/3.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/4.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/5.png">
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 hidden">
+                            <img class="img-fluid" src="./images/partners/6.png">
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <!-- live chat button -->    
+              <div>
+                <a id="chat" class="btn btn-sm btn-chat" onclick="openLiveChat()" style="padding:15px"><i class="fas fa-comment"></i>  Live Chat</a>
+            </div>
+       <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-container">
+            <div>
+              <span class="text">&copy Hospital 2020</span>
+            </div>
+            <div class="social-media-text"> Follow us @ -
+                <a href="#"><i class="fab fa-twitter"></i></a>   
+                <a href="#"><i class="fab fa-instagram"></i></a>   
+                <a href="#"><i class="fab fa-linkedin"></i></a> 
+            </div>
+            <div>
+              <p class="text"> Hospital Address:</p>
+              <span class="text">123 Bootstrap Lane, Mumbai, MH - 412345 India</span>
+              <p class="text">Contact - +91 99999 99999 </p>
+            </div>
+          </div>
+        </footer>             
+
+ 
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>      
+
+    <script>
+
+        function onDepartmentSelect(){        
+            //Get the department select
+        const selectedDept = document.querySelector("#department").value;
+        const doctorSelect = document.querySelector("#doctor");
+
+        //Doctor options based on departments
+        const dentists = ["Dr. Jocelyn Wren","Dr. Mark Wilson"];
+        const pediatricians = ["Dr. Araxy Carter", "Dr. David Watson"];
+        const labdoctors = ["Dr. Jonathan Reese", "Dr. Mark Wilson"];
+        const physiotherapists = ["Dr. Ferida Mallik", "Dr. David Watson"];
+        const orthpedicdoctors = ["Dr. Timmothy Glen", "Dr. Mark Wilson"];
+        const cardiologists = ["Dr. Cynthia Kohl", "Dr. David Watson"];
+
+        //Remove already existing doctors from the doctor selectbox.
+        removeDoctors(doctorSelect);
+        switch(selectedDept){        
+
+          case "Dental care":                            
+                              for (var i = 0; i < dentists.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + dentists[i] + "'>" + dentists[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+          case "Pediatrics":
+                             for (var i = 0; i < pediatricians.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + pediatricians[i] + "'>" + pediatricians[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+          case "Test diagnostic":                              
+                              for (var i = 0; i < labdoctors.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + labdoctors[i] + "'>" + labdoctors[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+          case "Physiotherapy":                             
+                              for (var i = 0; i < physiotherapists.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + physiotherapists[i] + "'>" + physiotherapists[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+          case "Orthopedics":
+                              for (var i = 0; i < orthpedicdoctors.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + orthpedicdoctors[i] + "'>" + orthpedicdoctors[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+          case "Cardiology":                             
+                              for (var i = 0; i < cardiologists.length; i++) {
+                                var newSelect = document.createElement('option');
+                                selectHTML = "<option value='" + cardiologists[i] + "'>" + cardiologists[i] + "</option>";
+                                newSelect.innerHTML = selectHTML;
+                                document.getElementById('doctor').add(newSelect);
+                              }
+                              break;
+
+        }      
+        
+    }
+    function removeDoctors(doctorSelect){                                      
+                while (doctorSelect.options.length > 0) {
+                    doctorSelect.remove(0);
+                }
+        }	
+
+        //open live chat window
+     	function openLiveChat(){
+                        window.open("livechat.html","","width=600,height=600");
+        }   
+        
+    </script>
+    </body>
+</html>

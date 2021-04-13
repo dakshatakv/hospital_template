@@ -1,0 +1,661 @@
+/* navbar */
+.navbar{
+	padding-top: 15px;
+	padding-bottom: 15px;
+  text-align: center;
+	/* box-shadow: 10px 10px 10px #d7d7c1; */
+}
+
+nav .navbar-nav .active a{
+  color:#64b6d9;
+}
+
+nav .navbar-nav .active{
+  color:#64b6d9;
+}
+
+nav .navbar-brand{
+	  font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 5px; 
+    color: black;
+    text-shadow: 2px 2px #64b6d9;
+}
+
+nav .parent-link{ 
+    font-size: 20px;
+    position: relative;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 4px; 
+    font: normal 500;
+    text-transform: uppercase;
+    margin-left: 34px;
+    margin-right: 34px;
+    text-align: center;
+}
+
+nav .parent-link:hover{ 
+    font-weight: 700;
+    color: #64b6d9;
+    letter-spacing: 4px; 
+    font: normal 500;
+    text-transform: uppercase;
+}
+
+nav .child-link{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 4px; 
+} 
+
+nav .child-link:hover{ 
+    font-weight: 700;
+    color: #64b6d9;
+    letter-spacing: 4px; 
+    font: normal 500;
+    text-transform: uppercase;
+}
+
+nav .navbar-toggler i{
+	color: black;  
+}
+
+nav .btn-info{
+  background-color: #64b6d9 !important;
+  padding-left:30px;
+  padding-right:30px;
+  font-size:20px;
+  font-weight:800;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* carousel */
+.carousel-content1 h3{
+  position: absolute;
+  bottom: 75%;
+  left: 10%;
+  font-family: 'Nunito', sans-serif;
+  z-index: 20;
+  color: white; 
+  font-weight: 400;  
+  font-size: 4rem;
+  text-shadow: 4px 4px #64b6d9;
+}
+
+.carousel-content2 h3{
+  position: absolute;
+  bottom: 80%;
+  left: 54%;
+  font-family: 'Nunito', sans-serif;
+  z-index: 20; 
+  font-weight: 400; 
+  color: white;
+  font-size: 4rem;
+  text-shadow: 4px 4px #64b6d9;
+}
+
+.carousel-content3 h3{
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  font-family: 'Nunito', sans-serif;
+  z-index: 20;  
+  color: white;
+  font-size: 4rem;
+  text-shadow: 4px 4px #64b6d9;
+}
+.carousel-content4 h3{
+  position: absolute;
+  bottom: 60%;
+  left: 60%;
+  font-family: 'Nunito', sans-serif;
+  z-index: 20;  
+  color: white;
+  font-size: 4rem;
+  text-shadow: 4px 4px #64b6d9;
+}
+
+/* aboutus */
+
+#about_restaurant{
+    margin-top: 35%;
+}
+
+#about_restaurant div a img{
+    border-radius:20px;
+}
+
+#about_restaurant h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#about_restaurant p{
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    color:#64b6d9;
+    text-align: center;
+}
+/* features */
+#features{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+#features .single-feature-div{
+  border:1px solid darkgrey;
+  border-radius:10%;
+}
+
+#features h5{
+    font-size: 30px;
+    /* color: #64b6d9; */
+    color:#64b6d9;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+#features p{
+    color: black;
+    font-size: 19px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#features p i{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    /* background-color: #64b6d9; */
+    background-color:#64b6d9;
+    border-radius:50%;
+}
+/* hospital */
+#hospital{
+  margin-top:7%;
+}
+#hospital h2{
+    font-family: 'Charmonman', cursive;
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+}
+#hospital p{
+    margin-top:50px;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Charmonman', cursive; */
+    color:#64b6d9;
+}
+/* departments */
+#departments{
+  margin-top: 6%;
+}
+#departments h2{
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom:80px;
+}
+#departments .single-dept-div{
+  transition:all 0.3s linear; 
+}
+#departments .single-dept-div:hover{
+  transform:scale(1.1);
+}
+#departments h5{
+    line-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    color:#64b6d9;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#departments p{
+  color: black;
+  text-align: center;
+}
+
+/* partners */
+#partners{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#partners h2{
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    margin-bottom: 60px;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#partners .container{
+    border: 2px solid #d7d7c1;
+    box-shadow: 10px 10px 8px #e1e1d0;
+    padding: 30px;
+}
+
+/* media queries */
+@media(max-width: 1200px){
+    
+    #features div div{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+
+    #partners{
+        margin: 70px;
+        padding: 40px;
+    }
+    
+}
+/* footer */
+.footer{   
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #64b6d9;
+}
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.footer div span, p, a{
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+}
+.footer a i{
+    font-size: 23px;
+    padding:10px;
+    color: white;
+}
+
+.footer .social-media-text{
+    font-size: 23px;
+    color: white;
+}
+/* chat button */
+#chat{
+  color: white;
+  font-size: 25px;
+}
+
+.btn-chat{
+  /* position:absolute; */
+ 
+  position: fixed; 
+  right:2%;
+  bottom:5%;
+  background-color: #64b6d9;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight:600;
+  padding-left:10px;
+  padding-right:10px;
+  z-index: 999;
+  animation-name:flashing;
+  animation-duration:1s;  
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  
+}
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in 1.5s;
+}
+@keyframes flashing{
+    0%{ opacity:1.0; }
+    25%{ opacity:0.6; }
+    50%{ opacity: 0.3; }
+    75%{ opacity: 0.6; }
+    100%{ opacity:1.0; }
+}
+/* Our Team */
+#chefs{
+  margin-top: 200px;
+}
+#chefs h2{
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    color: black;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+}
+#chefs .row{
+  margin-top:80px;
+}
+#chefs .card{
+  border-color:#ffffff;
+}
+#chefs .card{
+  transition:all 0.3s linear;
+}
+#chefs .card:hover{
+  transform: scale(1.1);
+}
+#chefs .card .card-img-top{
+  border-radius:50%;  
+}
+#chefs .card .card-body .card-title{
+  font-size:28px;
+}
+#chefs .card .card-body .card-text{
+  font-size: 20px;
+  color: #64b6d9;
+  letter-spacing: 2px;
+}
+
+
+/*Contact Styles*/
+#contactus h1{
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom:8%;
+    margin-top: 10%;
+}
+
+#contact p{
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  color:black; 
+  font-size: 35px;   
+}
+#contact h5{
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 3px;
+  color:black; 
+  font-size: 40px;      
+}
+#contact h5,p{
+  margin-top: 20px;
+}
+#contact #contact-details{
+  border:2px solid #64b6d9;
+  /* padding: 10px;  */
+  animation: 2s slideInFromRight; 
+}
+#contact #contact-details h6{ 
+    color:#64b6d9;
+    font-size: 30px;
+}
+#contact #contact-details #office-address, #office-contact, #contact-email{
+    margin-top: 25px;
+    font-family: 'Nunito', sans-serif;
+    color:black;
+    font-size: 25px;
+}
+#contact #contact-details #contact-email{
+    margin-bottom: 25px;
+}
+#contact #location-map{
+  animation: 1s slideInFromLeft;  
+}
+
+/*Testimonials Styles*/
+#testimonials{
+  margin-top: 10%;
+}
+
+#testimonials h1{
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+
+#testimonials_boxes{
+  /* margin-top: 200px; */
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#testimonials_boxes .card{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;      
+    border-radius: 30px;
+    box-shadow: 7px 7px #64b6d9;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#testimonials_boxes .card:hover{
+    transform:scale(1.1);
+}
+
+#testimonials_boxes .card h5{
+    font-size: 30px;
+  /* color: black; */
+  color:black;
+  font-family: 'Nunito', sans-serif;
+  padding: 20px;
+}
+
+#testimonials_boxes .card .card-text{
+    font-size: 23px;
+  color: #64b6d9;
+  padding: 10px;
+}
+
+#testimonials_boxes .card .name{
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+  color: black;
+  padding: 10px;
+}
+
+#testimonials_boxes .card img {
+  border-radius: 50%;
+}
+
+/*Our Department Styles*/
+#our-departments{
+  margin-top:8%;
+}
+#our-departments h2{
+    color: black;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+}
+#our-departments .single-dept-div{
+  margin-top:6%;
+  transition:all 0.3s linear; 
+}
+#our-departments .single-dept-div:hover{
+  transform:scale(1.1);
+}
+#our-departments h5{
+    line-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    color:#64b6d9;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#our-departments p{
+  text-align: center;
+  color: black;
+}
+
+/*Doctors Styles*/
+#our-doctors{
+  margin-top:8%;
+}
+#our-doctors h2{
+  color: black;
+  text-shadow: 1px 1px #64b6d9;
+  font-family: 'Charmonman', cursive;
+  font-size: 90px;
+  font-weight: 800;
+  text-align: center;
+}
+#our-doctors .single-dept-div{
+margin-top:6%;
+border-radius:10%;
+transition:all 0.3s linear; 
+}
+#our-doctors .single-dept-div:hover{
+transform:scale(1.1);
+}
+#our-doctors h5{
+  line-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  color:#64b6d9;
+  font-size: 30px;
+  font-weight: 800;
+}
+#our-doctors .card{
+  
+  border-top-left-radius: 10%;
+  border-top-right-radius:10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius:10%;
+}
+#our-doctors .card .card-img-top{
+  border-top-left-radius: 10%;
+  border-top-right-radius:10%;
+}
+
+#our-doctors p{
+text-align: center;
+color: black;
+}
+
+/*About Us Styles*/
+#aboutus{
+  margin-top:8%;
+}
+
+#aboutus h2{
+    color: black;
+    margin-bottom: 60px;
+    text-shadow: 1px 1px #64b6d9;
+    font-family: 'Charmonman', cursive;
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#aboutus div p{
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  padding-right: 35px;
+}
+
+#aboutus div img{
+  border-radius: 50px;
+}
+
+#aboutus div #hist{
+  margin-top:12%;
+}
+
+#aboutus .history{
+  margin-top: 10%;
+}
+
+#aboutus .history h1{
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px #64b6d9;
+  text-decoration: underline;
+}
+
+#aboutus .history p{
+  color: black;
+  padding: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+}
+/*Appointment Styles*/
+#appointment{
+  margin-top:6%;  
+}
+#appointment h2{
+  color: #64b6d9;
+  margin-bottom:4%;
+  font-family: 'Nunito', sans-serif;
+  font-weight:800; 
+  font-size: 50px;
+}
+#appointment #appointment-form{
+  border: 2px solid #64b6d9;
+  padding: 50px;
+  border-radius:20px;
+  font-size: 20px;
+}
+#appointment #appointment-form .form-div{
+    margin-top:1rem;
+}
+#appointment .label-appointment{
+  line-height: 20px;
+  font-family: 'Nunito', sans-serif;    
+  font-weight:600;
+  font-size: 20px;
+}
+
+#appointment #book-appointment{
+  background-color:#64b6d9 !important;
+  color:#fff;
+  padding:10px;
+  font-size:20px;
+  font-weight:600;
+  font-family: 'Nunito', sans-serif; 
+}

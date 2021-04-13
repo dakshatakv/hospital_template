@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!-- meta tags -->    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live chat</title>
+
+        <!-- Bootstrap CSS -->    
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- google fonts -->    
+        <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="script.js"></script>
+        <style>
+          	h1{
+          		font-family: 'Charmonman', cursive;
+    			    color: black;
+    			    margin-top: 6%;
+    			    text-shadow: 1px 1px #64b6d9;
+    			    font-size: 90px;
+    			    font-weight: 800;
+    			    text-align: center;
+          	}
+
+            #message-container{
+              	margin: auto;
+              	margin-top: 60px;
+                height:60vh;
+                padding: 20px;	
+                width:70%;
+                font-weight: 800;
+                font-family: 'Nunito', sans-serif;
+                font-size: 30px;
+                border: 2px solid #64b6d9;
+                box-shadow: 10px 10px 10px #d7d7c1;
+                overflow-y:auto;
+            }
+           #send-container{
+               margin-top: 50px;
+               margin-bottom: 100px;
+               font-weight: 800;
+               text-align: center;
+               height: 50px;
+               font-family: 'Nunito', sans-serif;
+           } 
+
+           #send-container input{
+           	font-size: 20px;
+           	width: 52%;
+           	height: 60px;
+           	padding: 20px;
+            font-family: 'Nunito', sans-serif;
+           	border: 2px solid #64b6d9;
+           	font-size: 20px;
+           }
+           
+            #send-container #send-button{
+                  background-color: #64b6d9 !important;
+                  padding-top: 8px;
+                  padding-bottom: 8px;
+        				  padding-left:25px;
+        				  padding-right:25px;
+        				  font-size:20px;
+        				  font-weight:800;
+        				  height: 60px;
+        				  border: 2px solid #64b6d9;
+        				  color: white;
+        				  font-family: 'Nunito', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+    	<!-- heading -->    
+    	<h1>Chat with our expert doctors!</h1>
+        <div id="message-container"></div>
+        <!-- form -->    
+        <form id="send-container">
+                <input type="text" placeholder="Enter your message here" id="message-input">
+                <button type="submit" id="send-button">Send</button>
+        </form>          
+    </body>
+</html>
